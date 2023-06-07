@@ -1,0 +1,10 @@
+services:
+  ha-discord-mute-sensor:
+    build:
+      dockerfile: Containerfile
+    environment:
+      - DISCORD_BOT_TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaa
+      - DISCORD_USER_ID=12323123123
+      - HA_BASE_URL=https://home.assistant:8123
+      - HA_SENSOR_NAME=discord_muted
+      - HA_AUTH_TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
